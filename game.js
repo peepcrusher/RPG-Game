@@ -54,6 +54,15 @@ var warrior = {
     status:() => {
         console.log(warrior)
         return warrior
+    },
+    levelUp: () =>{
+        warrior.level++
+        warrior.maxHitPoints += (warrior.maxHitPoints * .20);
+        warrior.currentHitPoints = warrior.currentHitPoints;
+        warrior.strength += 1 + (Math.round(warrior.strength * .20));
+        warrior.defence += 1 + (Math.round(warrior.defence *.20));
+        warrior.magic += 1 + (Math.round(warrior.magic * .20));
+        warrior.speed += 1 + (Math.round(warrior.speec * .20));
     }
 }
 
